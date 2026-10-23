@@ -1,0 +1,69 @@
+/* A4 print layout — used by cv-print.html and by build-pdf.py */
+:root{--ink:#142536;--ivory:#F3EEE5;--sage:#879688;--copper:#B77A55;--copper-ink:#8A5535;--soft:rgba(20,37,54,.78);--line:rgba(20,37,54,.2);
+  --f-ar:"itf Qomra Arabic","Tajawal","Segoe UI",Tahoma,sans-serif;--f-lat:"Manrope","itf Qomra Arabic","Tajawal",sans-serif}
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+html,body{margin:0;background:#d9d4ca}
+body{font-family:var(--f-ar);font-size:9.6pt;line-height:1.6;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.latin{font-family:var(--f-lat);direction:ltr;unicode-bidi:isolate}
+.page{width:210mm;height:297mm;margin:0 auto 8mm;background:var(--ivory);padding:14mm 15mm 12mm;position:relative;overflow:hidden;page-break-after:always;break-after:page}
+.page:last-child{page-break-after:auto;break-after:auto}
+@media print{html,body{background:none}.page{margin:0}}
+
+/* header */
+.head{display:grid;grid-template-columns:1fr 38mm;gap:9mm;align-items:start;padding-bottom:6mm;border-bottom:1.2pt solid var(--ink)}
+.eyebrow{margin:0 0 2mm;font-family:var(--f-lat);font-weight:700;font-size:7.4pt;letter-spacing:.16em;color:var(--copper-ink);direction:ltr;text-align:right}
+h1{margin:0;font-weight:800;font-size:31pt;line-height:1.25}
+.headline{margin:1.5mm 0 0;font-weight:500;font-size:10.5pt;color:var(--soft)}
+.headline b{color:var(--copper);font-weight:500;margin-inline:2mm}
+.statement{margin:4mm 0 0;padding-inline-start:3.5mm;border-inline-start:1.4pt solid var(--copper);font-weight:500;font-size:11pt}
+.contact{list-style:none;margin:4.5mm 0 0;padding:0;display:flex;flex-wrap:wrap;gap:1mm 6mm;font-size:8.6pt}
+.contact span{color:var(--soft)}
+.portrait{position:relative;width:38mm;height:48mm;background:#e5dfd2;border:.6pt solid var(--sage)}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.portrait .ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-size:7.4pt;color:var(--soft);padding:3mm}
+.portrait::after{content:"";position:absolute;inset-inline-end:-2mm;bottom:5mm;width:9mm;height:.8mm;background:var(--copper)}
+
+/* sections */
+section{margin-top:5.6mm}
+h2{margin:0 0 2.6mm;font-weight:800;font-size:11.5pt;display:flex;align-items:center;gap:3mm;color:var(--ink)}
+h2::after{content:"";flex:1;height:.5pt;background:var(--line)}
+h2 .n{font-family:var(--f-lat);font-size:7pt;color:var(--copper-ink);letter-spacing:.1em}
+p{margin:0}
+.summary p{font-size:10pt;max-width:none;margin-bottom:1.6mm}
+
+.job{display:grid;grid-template-columns:34mm 1fr;gap:5mm;padding:4.2mm 0;border-top:.5pt solid var(--line);break-inside:avoid}
+.job:first-of-type{border-top:0;padding-top:0}
+.job .when{font-size:8.6pt;color:var(--soft)}
+.job .org{font-weight:800;font-size:9.8pt;line-height:1.45;color:var(--ink);margin-top:.6mm}
+.job .kind{display:inline-block;margin-top:1mm;font-size:7.4pt;color:var(--copper-ink);border:.5pt solid currentColor;padding:0 2mm;border-radius:.5mm}
+.job h3{margin:0 0 1.2mm;font-weight:800;font-size:10.8pt;line-height:1.5}
+.job .proj{font-size:8.8pt;color:var(--soft);margin-bottom:1.2mm}
+ul{margin:0;padding:0;list-style:none}
+.job li{position:relative;padding-inline-start:4mm;margin-bottom:.8mm}
+.job li::before{content:"";position:absolute;inset-inline-start:0;top:.62em;width:2mm;height:.5pt;background:var(--copper)}
+
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:6mm}
+.mini{break-inside:avoid;border-top:.5pt solid var(--line);padding-top:2mm}
+.mini h3{margin:0;font-weight:800;font-size:9.8pt}
+.mini .m{font-size:8.4pt;color:var(--soft)}
+.mini p.d{margin-top:.8mm;font-size:9pt}
+
+.edu h3{margin:0;font-weight:800;font-size:10.4pt}
+.edu .m{color:var(--soft);font-size:8.8pt}
+
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:4mm}
+.skills h3{margin:0 0 1.4mm;font-weight:800;font-size:9.4pt;padding-bottom:1mm;border-bottom:.8pt solid var(--ink)}
+.skills li{font-size:8.6pt;line-height:1.5;padding:.7mm 0;border-bottom:.4pt solid var(--line)}
+.note{font-size:8pt;color:var(--soft);margin-top:2mm}
+
+.works{display:grid;grid-template-columns:1fr 1fr;gap:3mm 6mm}
+.w{break-inside:avoid;border-inline-start:1.4pt solid var(--sage);padding-inline-start:3mm}
+.w h3{margin:0;font-weight:800;font-size:9.6pt}
+.w .k{font-size:7.6pt;color:var(--copper-ink)}
+.w p{font-size:8.8pt;margin-top:.5mm}
+.foot{position:absolute;inset-inline:15mm;bottom:8mm;display:flex;justify-content:space-between;font-size:7.4pt;color:var(--soft)}
+.verify{background:rgba(183,122,85,.2)}
+body.clean .verify{background:none}
+
+.skills{grid-template-columns:repeat(3,1fr)}h2{break-after:avoid}section,.mini,.w{break-inside:avoid}.foot{justify-content:center!important}
