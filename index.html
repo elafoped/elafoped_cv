@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>إيلاف يوسف عبيد — الإعلام الرقمي والتصميم</title>
   <meta name="description"
-    content="إيلاف يوسف عبيد — الإعلام الرقمي والتصميم، الاتصال المؤسسي، هندسة البرمجيات وبرمجة التطبيقات. القنيطرة، سوريا.">
+    content="إيلاف يوسف عبيد — الإعلام الرقمي والتصميم، العمل الإنساني، هندسة البرمجيات. القنيطرة، سوريا.">
   <meta name="theme-color" content="#FBF1EE">
+  <meta property="og:title" content="إيلاف يوسف عبيد — الإعلام الرقمي والتصميم">
+  <meta property="og:description" content="Stories. Systems. Impact.">
+  <meta property="og:image" content="assets/portrait.jpg">
   <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
@@ -20,8 +22,8 @@
   <a class="skip" href="#main">انتقل إلى المحتوى</a>
 
   <header class="nav" id="top">
-    <div class="wrap nav__in">
-      <a class="nav__brand" href="#hero" aria-label="إيلاف يوسف عبيد — الرئيسية">إيلاف</a>
+    <div class="nav__in">
+      <a class="nav__brand" href="#hero" aria-label="إيلاف يوسف عبيد — الرئيسية"><i aria-hidden="true"></i>إيلاف</a>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu"><span
           class="sr">القائمة</span><i aria-hidden="true"></i></button>
       <nav id="menu" class="nav__menu" aria-label="التنقل الرئيسي">
@@ -33,8 +35,7 @@
         <a href="#contact">تواصل</a>
       </nav>
       <div class="nav__actions">
-        <a class="btn btn--sm" href="elaf-yousf-obeid-cv-ATS.pdf" download>تحميل السيرة <span class="latin">ATS
-            PDF</span></a>
+        <a class="btn btn--sm" href="elaf-yousf-obeid-cv-ATS.pdf" download>السيرة الذاتية <span class="latin">PDF</span></a>
       </div>
     </div>
   </header>
@@ -43,7 +44,10 @@
 
     <!-- HERO -->
     <section class="hero" id="hero" aria-labelledby="name">
-      <svg class="hero__bg" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+      <span class="blob blob--1" aria-hidden="true" data-par="0.12"></span>
+      <span class="blob blob--2" aria-hidden="true" data-par="-0.08"></span>
+      <span class="blob blob--3" aria-hidden="true" data-par="0.16"></span>
+      <svg class="hero__rings" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
         <g fill="none" stroke="currentColor" stroke-width="1">
           <ellipse cx="400" cy="400" rx="120" ry="90" />
           <ellipse cx="400" cy="400" rx="190" ry="150" />
@@ -52,144 +56,175 @@
           <ellipse cx="400" cy="400" rx="400" ry="350" />
         </g>
       </svg>
+
       <div class="wrap hero__grid">
         <div class="hero__text">
-          <h1 class="hero__name" id="name" data-reveal>إيلاف يوسف عبيد</h1>
-          <p class="hero__headline" data-reveal>الإعلام الرقمي والتصميم <span class="sep" aria-hidden="true">|</span>
-            العمل الإنساني  <span class="sep" aria-hidden="true">|</span>  هندسة البرمجيات  </p>
+          <p class="eyebrow" data-reveal>القنيطرة، سوريا</p>
+          <h1 class="hero__name" id="name" aria-label="إيلاف يوسف عبيد">إيلاف يوسف عبيد</h1>
+          <p class="hero__headline" data-reveal>الإعلام الرقمي والتصميم <span class="sep" aria-hidden="true">✦</span>
+            العمل الإنساني <span class="sep" aria-hidden="true">✦</span> هندسة البرمجيات</p>
           <p class="hero__rotor" data-reveal><span>أتعلّم بسرعة:</span> <b class="latin" id="rotor">Flutter</b></p>
           <p class="hero__statement" data-reveal>«وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ»</p>
 
           <div class="hero__cta" data-reveal>
-            <a class="btn" href="elaf-yousf-obeid-cv-ATS.pdf" download>تحميل السيرة <span class="latin">ATS
-                PDF</span></a>
+            <a class="btn" href="elaf-yousf-obeid-cv-ATS.pdf" download>تحميل السيرة <span class="latin">ATS PDF</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14" />
+              </svg></a>
             <a class="btn btn--ghost" href="elaf-yousf-obeid-cv.pdf" download>النسخة المصمّمة</a>
-            <a class="btn btn--ghost" href="cv-print.html" target="_blank" rel="noopener" data-print>طباعة السيرة</a>
+            <a class="btn btn--ghost" href="cv-print.html" target="_blank" rel="noopener" data-print>طباعة</a>
             <a class="link" href="#experience">الخبرة المهنية ↓</a>
           </div>
         </div>
 
         <figure class="portrait" data-reveal>
-          <div class="portrait__frame">
-            <div class="portrait__ph" aria-hidden="true">
+          <div class="portrait__stage">
+            <div class="portrait__halo" aria-hidden="true"></div>
+            <div class="portrait__frame">
+              <img src="assets/portrait.jpg" alt="إيلاف يوسف عبيد" width="800" height="1000" fetchpriority="high">
             </div>
-            <img src="assets/portrait.jpg" alt="إيلاف يوسف عبيد" width="800" height="1000" onerror="this.remove()">
+            <svg class="portrait__ring" viewBox="0 0 150 150" aria-hidden="true">
+              <circle class="disc" cx="75" cy="75" r="74" />
+              <defs><path id="rp" d="M75 75 m-52 0 a52 52 0 1 1 104 0 a52 52 0 1 1 -104 0" /></defs>
+              <g class="spin">
+                <text><textPath href="#rp" startOffset="0" textLength="318" lengthAdjust="spacing">STORIES. SYSTEMS. IMPACT. </textPath></text>
+              </g>
+              <circle class="dot" cx="75" cy="75" r="9" />
+            </svg>
+            <span class="chip-f chip-f--1"><i></i>تصميم</span>
+            <span class="chip-f chip-f--2"><i></i>مونتاج</span>
+            <span class="chip-f chip-f--3"><i></i>برمجة</span>
           </div>
-          <figcaption>القنيطرة، سوريا</figcaption>
+          <figcaption>أصنع من الفكرة رسالة، ومن الرسالة أثراً.</figcaption>
         </figure>
       </div>
     </section>
+
+    <!-- STATS -->
+    <div class="wrap stats">
+      <div class="stats__in" data-reveal>
+        <div class="stat"><b data-count="7">0</b><span>جهات وشركاء عملتُ معهم</span></div>
+        <div class="stat"><b data-count="3">0</b><span>مجالات: إعلام، عمل إنساني، برمجيات</span></div>
+        <div class="stat"><b data-count="2">0</b><span>سنوات تطوّع في <span class="latin">RBCS</span></span></div>
+        <div class="stat"><b data-count="2019">0</b><span>بداية المسار التقني</span></div>
+      </div>
+    </div>
 
     <section class="logos" aria-label="جهات عملتُ معها">
       <p class="logos__t">جهات وشركاء عملتُ معهم</p>
       <div class="marquee">
         <ul class="marquee__track">
-          <li><img src="assets/logos/media-qunaytra.png" alt="إعلام القنيطرة" width="64" height="64"
-              loading="lazy"><span>إعلام القنيطرة</span></li>
-              <li><img src="assets/logos/vevoline.png" alt="vevo line" width="64" height="64"
-              loading="lazy"><span>Vevo line </span></li>
-          <li><img src="assets/logos/alrashidin.png" alt="الراشدين" width="64" height="64"
-              loading="lazy"><span>الراشدين</span></li>
-          <li><img src="assets/logos/athr.png" alt="مؤسسة أثر" width="64" height="64" loading="lazy"><span>مؤسسة
-              أثر</span></li>
-          <li><img src="assets/logos/diab-food.png" alt="Diab Food" width="64" height="64" loading="lazy"><span>Diab
-              Food</span></li>
+          <li><img src="assets/logos/media-qunaytra.png" alt="" width="64" height="64" loading="lazy"><span>مديرية إعلام القنيطرة</span></li>
+          <li><img src="assets/logos/vevoline.png" alt="" width="64" height="64" loading="lazy"><span class="latin">Vevo Line</span></li>
+          <li><img src="assets/logos/alrashidin.png" alt="" width="64" height="64" loading="lazy"><span>أنوار الراشدين</span></li>
+          <li><img src="assets/logos/athr.png" alt="" width="64" height="64" loading="lazy"><span>مؤسسة أثر</span></li>
+          <li><img src="assets/logos/diab-food.png" alt="" width="64" height="64" loading="lazy"><span class="latin">Diab Food</span></li>
+          <li><img src="assets/logos/madora.png" alt="" width="64" height="64" loading="lazy"><span class="latin">Madora</span></li>
+          <li><img src="assets/logos/rbcs.png" alt="" width="64" height="64" loading="lazy"><span class="latin">RBCS</span></li>
         </ul>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="section" id="about" aria-labelledby="about-h">
-      <div class="wrap grid2">
+      <div class="wrap about">
         <div>
           <p class="kicker" data-reveal><span class="num latin">01</span> نبذة</p>
-          <h2 id="about-h" class="h2" data-reveal>محتوى بصري واضح، وخلفية تقنية تدعمه.</h2>
+          <h2 id="about-h" class="h2" data-reveal>محتوى بصري <em>واضح</em>، وخلفية تقنية تدعمه.</h2>
         </div>
-        <div class="prose" data-reveal>
-          <p>خريجة هندسة معلوماتية  – هندسة البرمجيات من جامعة دمشق، أعمل في مجال الإعلام الرقمي والتصميم، مع خبرة
-            في إعداد المحتوى البصري، وتنسيق المهام التقنية والإعلامية، وتنظيم المعلومات والملفات الرقمية. لديّ تجربة في
-            العمل الإنساني والمبادرات المجتمعية، وأسعى إلى توظيف خلفيتي التقنية في تقديم محتوى واضح يخدم المؤسسات
-            والقضايا المحلية.</p>
+        <div>
+          <p class="about__text" id="aboutText">خريجة هندسة معلوماتية – هندسة البرمجيات من جامعة دمشق، أعمل في مجال الإعلام الرقمي والتصميم، مع خبرة في إعداد المحتوى البصري، وتنسيق المهام التقنية والإعلامية، وتنظيم المعلومات والملفات الرقمية. لديّ تجربة في العمل الإنساني والمبادرات المجتمعية، وأسعى إلى توظيف خلفيتي التقنية في تقديم محتوى واضح يخدم المؤسسات والقضايا المحلية.</p>
+          <ul class="pills" data-reveal>
+            <li>التصميم الغرافيكي</li>
+            <li>المحتوى الرقمي</li>
+            <li>مونتاج الفيديو</li>
+            <li>التنسيق المؤسسي</li>
+            <li>العمل الإنساني</li>
+            <li>هندسة البرمجيات</li>
+          </ul>
         </div>
       </div>
-
     </section>
 
     <!-- EXPERIENCE -->
     <section class="section section--tint" id="experience" aria-labelledby="exp-h">
       <div class="wrap">
-        <p class="kicker" data-reveal><span class="num latin">02</span> الخبرة</p>
-        <h2 id="exp-h" class="h2" data-reveal>أبرز الخبرات العملية</h2>
+        <div class="exp-wrap">
+          <div class="exp-head">
+            <p class="kicker" data-reveal><span class="num latin">02</span> الخبرة</p>
+            <h2 id="exp-h" class="h2" data-reveal>أبرز الخبرات <em>العملية</em></h2>
+            <p data-reveal>من التصميم والمونتاج إلى التنسيق التقني والعمل الإنساني.</p>
+          </div>
 
-        <article class="exp" data-reveal>
-          <div class="exp__meta">
-            <span class="tag tag--pro">تعاون مهني مستقل</span>
-            <p class="exp__period"><span class="verify">منذ نحو أربعة أشهر</span></p>
-            <p class="exp__org">مديرية إعلام القنيطرة</p>
-          </div>
-          <div class="exp__body">
-            <h3>مصمّمة مستقلة للإعلام </h3>
-            <ul>
-              <li>إعداد تصاميم ومحتوى بصري للنشر عبر المنصات الرقمية.</li>
-              <li>تطوير أفكار بصرية لحملات وموضوعات ذات نفع عام.</li>
-              <li>المساهمة في تحويل الموضوعات المحلية إلى رسائل بصرية واضحة.</li>
-            </ul>
-          </div>
-        </article>
+          <div class="exp-list" id="expList">
 
-        <article class="exp" data-reveal>
-          <div class="exp__meta">
-            <span class="tag tag--pro">وظيفة</span>
-            <p class="exp__period">مطلع 2025 – حتى الآن</p>
-            <p class="exp__org">مكتب الراشدين للحج والعمرة</p>
-          </div>
-          <div class="exp__body">
-            <h3>منسّقة تقنية وإعلامية</h3>
-            <ul>
-              <li>تنسيق المهام التقنية والإعلامية المرتبطة بسير العمل اليومي.</li>
-              <li>تنظيم الملفات والمعلومات الرقمية وتحديثها.</li>
-              <li>المساهمة في إعداد المحتوى الرقمي وتسهيل التواصل بين الأطراف المعنية.</li>
-              <li>تقديم الدعم التقني الأساسي ومعالجة المشكلات التي تواجه العمل.</li>
-            </ul>
-          </div>
-        </article>
-          <article class="exp" data-reveal>
-          <div class="exp__meta">
-            <span class="tag tag--pro">وظيفة</span>
-            <p class="exp__period">مطلع 2024 – حتى نهاية 2025</p>
-            <p class="exp__org">Vevo Line </p>
-          </div>
-          <div class="exp__body">
-            <h3> فيديو مونيتر </h3>
-            <ul>
-              
-  <li>مونتاج مقاطع فيديو للنشر عبر المنصات الرقمية.</li>
-  <li>قص المقاطع وترتيبها وإضافة النصوص والمؤثرات الصوتية.</li>
-  <li>تجهيز الفيديوهات بالقياسات المناسبة لكل منصة.</li>
- </ul>
-          </div>
-        </article>
+            <article class="exp" data-reveal>
+              <span class="exp__dot" aria-hidden="true"></span>
+              <div class="exp__top">
+                <div class="exp__logo"><img src="assets/logos/media-qunaytra.png" alt="" width="48" height="48" loading="lazy"></div>
+                <div class="exp__org">مديرية إعلام القنيطرة<small class="verify">منذ نحو أربعة أشهر</small></div>
+                <div class="exp__badges"><span class="tag tag--pro">تعاون مهني مستقل</span></div>
+              </div>
+              <h3>مصمّمة مستقلة للإعلام</h3>
+              <ul>
+                <li>إعداد تصاميم ومحتوى بصري للنشر عبر المنصات الرقمية.</li>
+                <li>تطوير أفكار بصرية لحملات وموضوعات ذات نفع عام.</li>
+                <li>المساهمة في تحويل الموضوعات المحلية إلى رسائل بصرية واضحة.</li>
+              </ul>
+            </article>
 
-        <article class="exp" data-reveal>
-          <div class="exp__meta">
-            <span class="tag tag--hum">عمل إنساني</span>
-                        <p class="exp__period">1/10/2025– 31/8/2026 </p>
+            <article class="exp" data-reveal>
+              <span class="exp__dot" aria-hidden="true"></span>
+              <div class="exp__top">
+                <div class="exp__logo"><img src="assets/logos/alrashidin.png" alt="" width="48" height="48" loading="lazy"></div>
+                <div class="exp__org">مكتب الراشدين للحج والعمرة<small>مطلع 2025 – حتى الآن</small></div>
+                <div class="exp__badges"><span class="tag tag--pro">وظيفة</span></div>
+              </div>
+              <h3>منسّقة تقنية وإعلامية</h3>
+              <ul>
+                <li>تنسيق المهام التقنية والإعلامية المرتبطة بسير العمل اليومي.</li>
+                <li>تنظيم الملفات والمعلومات الرقمية وتحديثها.</li>
+                <li>المساهمة في إعداد المحتوى الرقمي وتسهيل التواصل بين الأطراف المعنية.</li>
+                <li>تقديم الدعم التقني الأساسي ومعالجة المشكلات التي تواجه العمل.</li>
+              </ul>
+            </article>
 
-            <p class="exp__org">مؤسسة أثر للتنمية والتطوير</p>
+            <article class="exp" data-reveal>
+              <span class="exp__dot" aria-hidden="true"></span>
+              <div class="exp__top">
+                <div class="exp__logo"><img src="assets/logos/vevoline.png" alt="" width="48" height="48" loading="lazy"></div>
+                <div class="exp__org"><span class="latin">Vevo Line</span><small>مطلع 2024 – حتى نهاية 2025</small></div>
+                <div class="exp__badges"><span class="tag tag--pro">وظيفة</span></div>
+              </div>
+              <h3>مونتيرة فيديو</h3>
+              <ul>
+                <li>مونتاج مقاطع فيديو للنشر عبر المنصات الرقمية.</li>
+                <li>قص المقاطع وترتيبها وإضافة النصوص والمؤثرات الصوتية.</li>
+                <li>تجهيز الفيديوهات بالقياسات المناسبة لكل منصة.</li>
+              </ul>
+            </article>
+
+            <article class="exp" data-reveal>
+              <span class="exp__dot" aria-hidden="true"></span>
+              <div class="exp__top">
+                <div class="exp__logo"><img src="assets/logos/athr.png" alt="" width="48" height="48" loading="lazy"></div>
+                <div class="exp__org">مؤسسة أثر للتنمية والتطوير<small>1/10/2025 – 31/8/2026</small></div>
+                <div class="exp__badges"><span class="tag tag--hum">عمل إنساني</span></div>
+              </div>
+              <h3>مشاركة في مشروع إنساني</h3>
+              <p class="exp__project">مشروع «سبل العيش وتمكين الأشخاص ذوي الإعاقة» — الشركاء: مؤسسة أثر للتنمية والتطوير،
+                <bdi lang="en">Première Urgence Internationale (PUI)</bdi>، وبرنامج الأمم المتحدة الإنمائي
+                (<bdi lang="en">UNDP</bdi>)، بدعم تمويلي فنلندي.</p>
+              <ul>
+                <li>المساهمة في توثيق أنشطة المشروع وتنظيم ملفاته ومعلوماته.</li>
+                <li>دعم إعداد التقارير والمواد الإعلامية المرتبطة بالأنشطة.</li>
+                <li>التنسيق والتعاون الميداني بين الجهات من المنظمات والمستفيدين.</li>
+                <li>المساهمة في عرض الأنشطة والنتائج بصورة واضحة تحترم كرامة المشاركين.</li>
+              </ul>
+            </article>
           </div>
-          <div class="exp__body">
-            <h3>مشاركة في مشروع إنساني</h3>
-            <p class="exp__project">مشروع «سبل العيش وتمكين الأشخاص ذوي الإعاقة» — الشركاء: مؤسسة أثر للتنمية والتطوير،
-              <bdi lang="en">Première Urgence Internationale (PUI)</bdi>، وبرنامج الأمم المتحدة الإنمائي (<bdi
-                lang="en">UNDP</bdi>)، بدعم تمويلي فنلندي.</p>
-            <ul>
-              <li>المساهمة في توثيق أنشطة المشروع وتنظيم ملفاته ومعلوماته.</li>
-              <li>دعم إعداد التقارير والمواد الإعلامية المرتبطة بالأنشطة.</li>
-              <li>  التنسيق والتعاون الميداني بين الجهات من المنظمات والمستفيدين    .</li>
-              <li>المساهمة في عرض الأنشطة والنتائج بصورة واضحة تحترم كرامة المشاركين.</li>
-            </ul>
-          </div>
-        </article>
+        </div>
 
         <div class="more">
           <h3 class="h3" data-reveal>خبرات أخرى</h3>
@@ -200,15 +235,14 @@
               <p>العمل على تقارير المشاريع والملفات التقنية والإعلامية وتنظيم الملفات الرقمية.</p>
             </article>
             <article class="card" data-reveal>
-              <span class="tag tag--vol">تطوع · ثلاث سنوات</span>
+              <span class="tag tag--vol">تطوع · سنتان</span>
               <h4><bdi lang="en">RBCS</bdi> — جامعة دمشق</h4>
               <p>شاركت في إعداد وكتابة مواد المحاضرات الجامعية.</p>
             </article>
             <article class="card" data-reveal>
               <span class="tag tag--pro">وظيفة</span>
               <h4><bdi lang="en">Diab Food</bdi></h4>
-              <p>مشرفة فريق ترويج (شباط 2022 – أيلول 2024)، وباحثة سوق     
-                .</p>
+              <p>مشرفة فريق ترويج (شباط 2022 – أيلول 2024)، وباحثة سوق.</p>
             </article>
           </div>
         </div>
@@ -219,19 +253,22 @@
     <section class="section" id="timeline" aria-labelledby="tl-h">
       <div class="wrap">
         <p class="kicker" data-reveal><span class="num latin">03</span> المسار</p>
-        <h2 id="tl-h" class="h2" data-reveal>من الدراسة التقنية إلى الاتصال والإعلام.</h2>
+        <h2 id="tl-h" class="h2" data-reveal>من الدراسة التقنية إلى <em>الاتصال</em> والإعلام.</h2>
 
-        <div class="tl" data-reveal>
+        <div class="tl" id="tl" data-reveal>
           <div class="tl__rail" role="tablist" aria-label="محطات المسار" aria-orientation="horizontal">
             <button class="tl__node is-active" role="tab" id="tab-2019" aria-selected="true" aria-controls="p-2019"
               tabindex="0"><span class="tl__year latin">2019</span><span class="tl__dot" aria-hidden="true"></span><span
                 class="tl__cap">بداية الدراسة</span></button>
-            <button class="tl__node" role="tab" id="tab-2023" aria-selected="false" aria-controls="p-2023"
-              tabindex="-1"><span class="tl__year latin">2023</span><span class="tl__dot"
+            <button class="tl__node" role="tab" id="tab-2022" aria-selected="false" aria-controls="p-2022"
+              tabindex="-1"><span class="tl__year latin">2022</span><span class="tl__dot"
                 aria-hidden="true"></span><span class="tl__cap">أول عمل ميداني</span></button>
-             <button class="tl__node" role="tab" id="tab-2025" aria-selected="false" aria-controls="p-2025"
+            <button class="tl__node" role="tab" id="tab-2024" aria-selected="false" aria-controls="p-2024"
+              tabindex="-1"><span class="tl__year latin">2024</span><span class="tl__dot"
+                aria-hidden="true"></span><span class="tl__cap">مونتاج الفيديو</span></button>
+            <button class="tl__node" role="tab" id="tab-2025" aria-selected="false" aria-controls="p-2025"
               tabindex="-1"><span class="tl__year latin">2025</span><span class="tl__dot"
-                aria-hidden="true"></span><span class="tl__cap">التنسيق التقني</span></button>
+                aria-hidden="true"></span><span class="tl__cap">التنسيق والعمل الإنساني</span></button>
             <button class="tl__node" role="tab" id="tab-2026" aria-selected="false" aria-controls="p-2026"
               tabindex="-1"><span class="tl__year latin">2026</span><span class="tl__dot"
                 aria-hidden="true"></span><span class="tl__cap">الإعلام والتصميم</span></button>
@@ -239,32 +276,36 @@
           <div class="tl__panels" aria-live="polite">
             <div class="tl__panel" role="tabpanel" id="p-2019" aria-labelledby="tab-2019">
               <h3>تشرين الأول 2019</h3>
-              <p>بدأت دراسة هندسة تقانة المعلوماتية في جامعة حمص وانتقلت في السنة الثانية الى دمشق، وهي القاعدة التقنية التي بنيت عليها
-                لاحقاً عملي في المحتوى والتنسيق.</p>
+              <p>بدأت دراسة هندسة تقانة المعلوماتية في جامعة حمص وانتقلت في السنة الثانية إلى دمشق، وهي القاعدة التقنية التي بنيت عليها لاحقاً عملي في المحتوى والتنسيق.</p>
             </div>
-            <div class="tl__panel" role="tabpanel" id="p-2023" aria-labelledby="tab-2023">
+            <div class="tl__panel" role="tabpanel" id="p-2022" aria-labelledby="tab-2022" hidden>
               <h3>شباط 2022</h3>
-              <p>انضممت إلى <bdi lang="en">Diab Food</bdi> باحثة سوق (حتى أيلول 2023) ومشرفة فريق ترويج (حتى أيلول 2024)،
-                فتعلّمت العمل مع الناس والفرق ميدانياً.</p>
+              <p>انضممت إلى <bdi lang="en">Diab Food</bdi> باحثة سوق (حتى أيلول 2023) ومشرفة فريق ترويج (حتى أيلول 2024)، فتعلّمت العمل مع الناس والفرق ميدانياً.</p>
             </div>
-            
-            <div class="tl__panel" role="tabpanel" id="p-2025" aria-labelledby="tab-2025">
-              <h3>مطلع 2025</h3>
-              <p>بدأت العمل منسّقة تقنية وإعلامية في مكتب الراشدين للحج والعمرة، وما زالت في هذا الدور.</p>
+            <div class="tl__panel" role="tabpanel" id="p-2024" aria-labelledby="tab-2024" hidden>
+              <h3>مطلع 2024</h3>
+              <p>بدأت العمل مونتيرة فيديو في <bdi lang="en">Vevo Line</bdi>، وأعددت مقاطع للنشر عبر المنصات الرقمية بالقياسات المناسبة لكل منصة.</p>
             </div>
-            <div class="tl__panel" role="tabpanel" id="p-2026" aria-labelledby="tab-2026">
+            <div class="tl__panel" role="tabpanel" id="p-2025" aria-labelledby="tab-2025" hidden>
+              <h3>2025</h3>
+              <p>بدأت العمل منسّقة تقنية وإعلامية في مكتب الراشدين للحج والعمرة، وما زلت في هذا الدور. وفي تشرين الأول 2025 بدأت المشاركة في مشروع «سبل العيش وتمكين الأشخاص ذوي الإعاقة» مع مؤسسة أثر.</p>
+            </div>
+            <div class="tl__panel" role="tabpanel" id="p-2026" aria-labelledby="tab-2026" hidden>
               <h3>2026</h3>
               <p>بدأت تعاوناً مستقلاً مع مديرية إعلام القنيطرة في التصميم والاتصال الرقمي، منذ نحو أربعة أشهر.</p>
             </div>
           </div>
         </div>
 
-        <div class="edu" data-reveal>
-          <p class="kicker">التعليم</p>
-          <h3 class="edu__title">بكالوريوس هندسة  المعلوماتية —اختصاص هندسة البرمجيات</h3>
-          <p class="edu__meta">جامعة دمشق · تشرين الأول 2019 – 2025 · المعدل <span class="latin">73%</span>
-          </p>
-
+        <div class="edu" id="edu" data-reveal>
+          <div class="ring" id="ring" style="--v:0">
+            <div><b class="latin" data-count="73">0</b><small>المعدل %</small></div>
+          </div>
+          <div>
+            <p class="kicker kicker--light">التعليم</p>
+            <h3 class="edu__title">بكالوريوس هندسة المعلوماتية — اختصاص هندسة البرمجيات</h3>
+            <p class="edu__meta">جامعة دمشق · تشرين الأول 2019 – 2025</p>
+          </div>
         </div>
       </div>
     </section>
@@ -272,12 +313,16 @@
     <!-- SKILLS -->
     <section class="section section--ink" id="skills" aria-labelledby="sk-h">
       <div class="wrap">
-        <p class="kicker" data-reveal><span class="num latin">04</span> المهارات</p>
-        <h2 id="sk-h" class="h2" data-reveal>ثلاث مجموعات للمهارات.</h2>
+        <p class="kicker kicker--light" data-reveal><span class="num latin">04</span> المهارات</p>
+        <h2 id="sk-h" class="h2" data-reveal>ثلاث مجموعات <em style="color:var(--rose)">للمهارات.</em></h2>
 
         <div class="skills">
           <article class="skill" data-reveal>
-            <span class="skill__glyph skill__glyph--circle" aria-hidden="true"></span>
+            <span class="skill__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.7-1.6 1.6-1.6H17a4 4 0 0 0 4-4C21 6.8 17 3 12 3Z" />
+                <circle cx="7.5" cy="11" r="1" /><circle cx="10" cy="7.5" r="1" /><circle cx="14.5" cy="7.5" r="1" />
+              </svg></span>
             <h3>الإعلام والتصميم</h3>
             <ul>
               <li>التصميم الغرافيكي</li>
@@ -288,20 +333,25 @@
             </ul>
           </article>
           <article class="skill" data-reveal>
-            <span class="skill__glyph skill__glyph--square" aria-hidden="true"></span>
+            <span class="skill__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14" />
+              </svg></span>
             <h3>التقنية والمعلومات</h3>
             <ul>
-              <li><span class="latin">Flutter</span> </li>
+              <li><span class="latin">Flutter</span></li>
               <li>تصميم استبيانات <span class="latin">KoBoToolbox</span></li>
               <li>تنظيم الملفات والأرشفة الرقمية</li>
               <li>معالجة البيانات وتنظيمها</li>
               <li>الدعم التقني الأساسي وحل المشكلات</li>
-                            <li><span class="latin">Microsoft Office</span></li>
-
+              <li><span class="latin">Microsoft Office</span></li>
             </ul>
           </article>
           <article class="skill" data-reveal>
-            <span class="skill__glyph skill__glyph--tri" aria-hidden="true"></span>
+            <span class="skill__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3 3 8l9 5 9-5-9-5Z" /><path d="m3 13 9 5 9-5M3 17.5l9 5 9-5" />
+              </svg></span>
             <h3>التنسيق والعمل المؤسسي</h3>
             <ul>
               <li>تنسيق المهام التقنية والإعلامية</li>
@@ -312,37 +362,40 @@
             </ul>
           </article>
         </div>
+
         <div class="learn" data-reveal>
           <p class="kicker kicker--light">سرعة التعلّم</p>
           <h3 class="learn__h">أتعلّم الأداة التي يحتاجها المشروع.</h3>
           <p class="learn__p">انتقلتُ من هندسة البرمجيات إلى الإعلام والتصميم، وأضيف إلى أدواتي باستمرار.</p>
           <div class="learn__grid">
-            <div class="lc"><b class="latin">Node.js</b><span>أبني بها واجهات تطبيقات فعالة مساعدة في مجال التصميم وأواصل
-                التعلّم</span><i style="--w:45%"></i></div>
-            <div class="lc"><b class="latin">KoBoToolbox</b><span>تصميم استبيانات ميدانية وجمع البيانات بنماذج
-                منظّمة</span><i style="--w:75%"></i></div>
-            <div class="lc"><b>التصميم والإعلام</b><span>من خلفية تقنية إلى سرد بصري واتصال رقمي بالممارسة</span><i
-                style="--w:85%"></i></div>
+            <div class="lc"><b class="latin">Node.js</b><span>أبني بها واجهات تطبيقات فعالة مساعدة في مجال التصميم وأواصل التعلّم</span><i style="--w:45%"></i></div>
+            <div class="lc"><b class="latin">KoBoToolbox</b><span>تصميم استبيانات ميدانية وجمع البيانات بنماذج منظّمة</span><i style="--w:75%"></i></div>
+            <div class="lc"><b>التصميم والإعلام</b><span>من خلفية تقنية إلى سرد بصري واتصال رقمي بالممارسة</span><i style="--w:85%"></i></div>
           </div>
         </div>
-        <p class="langs" data-reveal>اللغات: العربية(أصلية)، الإنكليزية: (Intermediate)</p>
+
+        <div class="langs" data-reveal>
+          <span>اللغات:</span>
+          <b>العربية (أصلية)</b>
+          <b>الإنكليزية <span class="latin">(Intermediate)</span></b>
+        </div>
       </div>
     </section>
 
     <!-- WORK -->
-    <section class="section" id="work" aria-labelledby="wk-h">
+    <section class="section" id="work" aria-labelledby="wk-h" style="padding-bottom:0">
       <div class="wrap">
-    
         <aside class="port" data-reveal>
-          <div class="port__txt"><span class="tag tag--pro">معرض الأعمال</span>
-            <h3>شاهد أعمال التصميم </h3>
-            <p>مجلد يضم تصاميمي. امسح الرمز أو اضغط الزر.</p>
+          <div class="port__txt">
+            <p class="kicker"><span class="num latin">05</span> الأعمال</p>
+            <h2 id="wk-h">شاهد أعمال <em style="font-style:normal;color:var(--wine)">التصميم</em></h2>
+            <p>مجلد يضم تصاميمي. امسحي الرمز أو اضغطي الزر.</p>
             <a class="btn" href="https://drive.google.com/drive/folders/12mAwkRwQ0FwnwwYz8xMDBKlGMuOega3Y"
               target="_blank" rel="noopener">فتح معرض التصميم ↗</a>
           </div>
           <a class="port__qr" href="https://drive.google.com/drive/folders/12mAwkRwQ0FwnwwYz8xMDBKlGMuOega3Y"
             target="_blank" rel="noopener" aria-label="رمز QR لمعرض الأعمال"><img src="assets/portfolio-qr.svg"
-              alt="QR لمعرض أعمال التصميم" width="168" height="168"></a>
+              alt="QR لمعرض أعمال التصميم" width="200" height="200"><small>امسح للمعاينة</small></a>
         </aside>
       </div>
     </section>
@@ -350,6 +403,9 @@
   </main>
 
   <footer class="footer" id="contact">
+    <div class="big" aria-hidden="true">
+      <div class="big__track"><span>Stories.</span><span>Systems.</span><span>Impact.</span><span>Stories.</span><span>Systems.</span><span>Impact.</span></div>
+    </div>
     <div class="wrap footer__grid">
       <div>
         <p class="kicker kicker--light"><span class="num latin">06</span> تواصل</p>
@@ -357,22 +413,23 @@
         <p class="footer__sub">القنيطرة، سوريا</p>
       </div>
       <ul class="contacts">
-        <li><span>البريد الإلكتروني</span><b class="verify">elafoped.ee@gmail.com</b></li>
-        <li><span>رقم الهاتف</span><b class="verify" dir="ltr">+963997044769</b></li>
+        <li><a href="mailto:elafoped.ee@gmail.com"><span>البريد الإلكتروني</span><b class="latin verify">elafoped.ee@gmail.com</b></a></li>
+        <li><a href="tel:+963997044769"><span>الهاتف</span><b class="latin" dir="ltr">+963 997 044 769</b></a></li>
       </ul>
       <div class="footer__actions">
-        <a class="btn btn--light" href="elaf-yousf-obeid-cv-ATS.pdf" download>تحميل السيرة <span class="latin">ATS
-            PDF</span></a>
+        <a class="btn btn--light" href="elaf-yousf-obeid-cv-ATS.pdf" download>تحميل السيرة <span class="latin">ATS PDF</span></a>
         <a class="btn btn--outline" href="cv-print.html" target="_blank" rel="noopener" data-print>طباعة</a>
       </div>
     </div>
-    <div class="wrap footer__end">
-      <span>© <span class="latin">2026</span> إيلاف يوسف عبيد</span>
+    <div class="wrap">
+      <div class="footer__end">
+        <span>© <span class="latin">2026</span> إيلاف يوسف عبيد</span>
+        <a class="totop" href="#top" aria-label="العودة إلى الأعلى">↑</a>
+      </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/fx.js"></script>
+  <script src="js/site.js"></script>
 </body>
 
 </html>
